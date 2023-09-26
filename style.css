@@ -7,6 +7,7 @@ body {
 
 .picture-sidebar {
     width: 58.8vw;
+    
 }
 
 #tree {
@@ -17,7 +18,7 @@ body {
 .sign-up-section {
     display: flex;
     flex-direction: column;
-    border: 1px solid blue;
+    /* border: 1px solid blue; */
     width: 100%;
     
 }
@@ -30,5 +31,53 @@ body {
 div.header {
     display: flex;
     flex-direction: column;
-    justify-content: end;
+    justify-content: center;
+    padding-left: 20px;
+}
+
+div.header > p:nth-child(1) {
+    padding-top: 40px;
+}
+
+div.header > p:nth-child(2) {
+    margin-top: 0;
+    margin-bottom: 0;
+};
+
+input {
+    appearance: none;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    padding-left: 20px;
+    padding-bottom: 20px;
+    background-color: yellow;
+    gap: 20px 0;
+}
+
+.form {
+    background-color: green;
+}
+
+.name-info,
+.contact-info,
+.pass {
+    display: flex;
+    justify-content: space-between;
+    width: 450px;
+}
+
+.fname p,
+.lname p,
+.email p,
+.phone p,
+.password p,
+.confirm-password p {
+    margin: 0;
+}
+
+button[type='submit'] {
+    background-color: purple;
 }

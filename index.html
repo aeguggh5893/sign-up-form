@@ -7,49 +7,86 @@
     </head>
     <body>
         <div class="picture-sidebar">
-            <img id="tree" src="photo/tree-background.jpg" alt="tree-background">
-            <!-- <img id="odin-lined" src="photo/odin-lined.png" alt="odin-lined"> -->
+            <!-- <img id="tree" src="photo/tree-background.jpg" alt="tree-background">
+            <img id="odin-lined" src="photo/odin-lined.png" alt="odin-lined"> -->
         </div>
         <div class="sign-up-section">
             <div class="header">
-                <h3>
+                <p>
                     This is not a real online service! You know you need something like this in your life
-                    to help realize your deepest dreams. 
-                </h3>
-                <h3>Sign up <em>now</em> to get started.</h3>
-                <h3>You <em>know</em> you want to.</h3>
+                    to help realize your deepest dreams. <br>Sign up <em>now</em> to get started.</br>
+                </p>
+                <p>You <em>know</em> you want to.</p>
             </div>
             <div class="form">
                 <!-- The action would be the address to my backend server to process the information. the Method would be 'POST'
                 bc we are getting sensitive information from the user when they are creating their account. -->
-                <form action="" method="">
+                <form action="#" method="POST">
+                    
                     <h1>Let's do this!</h1>
                     <div class="name-info">
-                        <label for="first-name">First Name</label>
-                        <input type="text" id="first-name" name="first-name" required>
+                        <div class="fname">
+                        <p>
+                            <label for="first-name">First Name</label>
+                        </p>
+                        <p>
+                            <input type="text" id="first-name" name="first-name" required>
+                        </p>
+                        </div>  
 
-                        <label for="last-name">Last Name</label>
-                        <input type="text" id="last-name" name="last-name" required>
+                        <div class="lname">
+                        <p>
+                            <label for="last-name">Last Name</label>
+                        </p>
+                        <p>
+                            <input type="text" id="last-name" name="last-name" required>
+                        </p>
+                        </div>
                     </div>
                     <div class="contact-info">
-                        <label for="email">Email</label>
-                        <input type="email" id="email" name="email" required>
+                        <div class="email">
+                            <p>
+                                <label for="email">Email</label>
+                            </p>
+                            <p>
+                                <input type="email" id="email" name="email" required>
+                            </p>
+                        </div>
 
-                        <label for="phone">Phone Number</label>
-                        <input type="tel" id="phone" name="phone" minlength="9" required>
+                        <div class="phone">
+                            <p>
+                                <label for="phone">Phone Number</label>
+                            </p>
+                            <p>
+                                <input type="tel" id="phone" name="phone" minlength="9" required>
+                            </p>
+                        </div>
                     </div>
                     <div class="pass">
-                        <label for="password">Password</label>
-                        <input type="password" id="password" name="password" required>
+                        <div class="password">
+                            <p>
+                                <label for="password">Password</label>
+                            </p>
+                            <p>
+                                <input type="password" id="password" name="password" required>
+                            </p>
+                        </div>
 
-                        <label for="confirm-password">Confirm Password</label>
-                        <input type="password" id="confirm-password" name="confirm-password" required>
+                        <div class="confirm-password">
+                        <p>
+                            <label for="confirm-password">Confirm Password</label>
+                        </p>
+                        <p>
+                            <input type="password" id="confirm-password" name="confirm-password" required>
+                        </p>
+                        </div>
                     </div>
                 
-            </div>
-            <div class="footer">
+            
                 <button type="submit">Create Account</button>
             </form>
+            
+            
                 <p>Already have an account? <a href="#">Log in</a></p>
             </div>
         </div>
