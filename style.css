@@ -23,6 +23,43 @@ body {
     background-size: cover; 
     color: white;
     font-family: Norse-Bold, sans-serif; 
+    display: flex;
+    flex-direction: column;
+}
+
+.top {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+}
+
+.bottom {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    height: 50vh;
+    font-family: sans-serif;
+    color: #fafafa;
+}
+
+p > a {
+    color: #fafafa;
+    font-size: small;
+}
+
+
+img {
+    height: 100px;
+    width: 100px;
+}
+
+.image-section {
+    display: flex;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 10px;
+    font-size: 50px;
 }
 
 .right {
@@ -127,9 +164,10 @@ button {
     border-radius: 5px;
     border: none;
     font-size: 15px;
+    box-shadow: 5px 5px #e5e7eb;
 }
 
-a {
+#login {
     text-decoration: none;
     color: #596D48;
 }
