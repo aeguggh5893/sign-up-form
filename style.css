@@ -1,13 +1,23 @@
+@font-face {
+    font-family: Norse-Bold;
+    src: url(../sign-up-form/fonts/Norse-Bold.otf);
+}
+
 body {
     display: flex;
     height: 100vh;
     width: 100vw;
     margin: 0;
+    font-family: Nose-Bold, sans-serif;
 }
 
 .picture-sidebar {
     width: 58.8vw;
-    
+    background-image: url(photo/halie-west-25xggax4bSA-unsplash.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: auto;
 }
 
 #tree {
@@ -53,12 +63,11 @@ form {
     flex-direction: column;
     padding-left: 20px;
     padding-bottom: 20px;
-    background-color: yellow;
     gap: 20px 0;
 }
 
 .form {
-    background-color: green;
+    
 }
 
 .name-info,
@@ -79,5 +88,35 @@ form {
 }
 
 button[type='submit'] {
-    background-color: purple;
+    background-color: #596D48;
+    color: white;
+    border-radius: 3px;
+    width: 200px;
+    padding: 10px;
+}
+
+input:empty {
+    border: 1px solid black;
+    border-radius: 3px;
+}
+
+input:focus {
+    outline: none;
+    border-radius: 3px;
+    border: 1px solid blue;
+    box-shadow: 0 0 10px #719ECE;
+}
+
+input:valid {
+    outline: none;
+    border-radius: 3px;
+    border: 1px solid pink;
+    box-shadow: 0 0 10px #719ECE;
+}
+
+input:invalid {
+    outline: none;
+    border-radius: 3px;
+    border: 1px solid red;
+    box-shadow: 0 0 10px #719ECE;
 }
