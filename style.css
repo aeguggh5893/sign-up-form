@@ -3,120 +3,34 @@
     src: url(../sign-up-form/fonts/Norse-Bold.otf);
 }
 
+
+
+/* installed font and then created a folder to hold the font. from there to access downloaded fonts, must use @font-face
+and then access is through the src by using the path way of exiting the current directory and accesing the font folder previously
+created and assigning it to the URL, from there we are able to use the new font by including it in the font family for our various
+elements */
+
 body {
+    margin: 0; /* Gets rid of the white space on the outer edges of the main div */
+    padding: 0;
+}
+
+.main {
     display: flex;
+    width: 100vw; /* Allows us to use 100% of the width of the screen */
     height: 100vh;
-    width: 100vw;
-    margin: 0;
-    font-family: Nose-Bold, sans-serif;
 }
 
-.picture-sidebar {
-    width: 58.8vw;
-    background-image: url(photo/halie-west-25xggax4bSA-unsplash.jpg);
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-position: center;
-    background-size: auto;
+.left {
+    background-image: url(./photo/halie-west-25xggax4bSA-unsplash.jpg);
+    /* the main reason why my image looked skewed from the first version was because I was using a larger image size compared to 
+    the one i'm currently using right now which fits the screen perfectly. The current one is 182 kilobytes vs the other larger image
+    being 1.1 Megabytes. 1000 kilobytes = 1 megabyte */
+    width: 35vw;
+    /* Since we set the main div to be accessed 100% through the height and width, we can also manipulate the inner child divs inside
+    to their respectave percentages to using the viewport units. In the case for the image, we will use 35% for the width and it will
+    take up 35% of the width of its section */
+    background-repeat: no-repeat; /* Prevents image from repeating if we happen to make the left div larger */
+    background-size: cover; /* fits the entire image as a cover */
 }
 
-#tree {
-    height: 100%;
-    width: 100%;
-}
-
-.sign-up-section {
-    display: flex;
-    flex-direction: column;
-    /* border: 1px solid blue; */
-    width: 100%;
-    
-}
-
-.sign-up-section > div {
-    border: 1px solid black;
-    flex-grow: 1;
-}
-
-div.header {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    padding-left: 20px;
-}
-
-div.header > p:nth-child(1) {
-    padding-top: 40px;
-}
-
-div.header > p:nth-child(2) {
-    margin-top: 0;
-    margin-bottom: 0;
-};
-
-input {
-    appearance: none;
-}
-
-form {
-    display: flex;
-    flex-direction: column;
-    padding-left: 20px;
-    padding-bottom: 20px;
-    gap: 20px 0;
-}
-
-.form {
-    
-}
-
-.name-info,
-.contact-info,
-.pass {
-    display: flex;
-    justify-content: space-between;
-    width: 450px;
-}
-
-.fname p,
-.lname p,
-.email p,
-.phone p,
-.password p,
-.confirm-password p {
-    margin: 0;
-}
-
-button[type='submit'] {
-    background-color: #596D48;
-    color: white;
-    border-radius: 3px;
-    width: 200px;
-    padding: 10px;
-}
-
-input:empty {
-    border: 1px solid black;
-    border-radius: 3px;
-}
-
-input:focus {
-    outline: none;
-    border-radius: 3px;
-    border: 1px solid blue;
-    box-shadow: 0 0 10px #719ECE;
-}
-
-input:valid {
-    outline: none;
-    border-radius: 3px;
-    border: 1px solid pink;
-    box-shadow: 0 0 10px #719ECE;
-}
-
-input:invalid {
-    outline: none;
-    border-radius: 3px;
-    border: 1px solid red;
-    box-shadow: 0 0 10px #719ECE;
-}
