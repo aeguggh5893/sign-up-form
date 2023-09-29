@@ -19,37 +19,46 @@
                         <br> <br> You <em>know</em> you want to.
                     </h3>
                 </div>
-                <div class="second">
-
-                        <h2>Let's do this!</h2>
-
-                    <form action="" method="get" class="form-main-div">
-                        <div class="form-divs">
-                            <label for="first-name">FIRST NAME</label>
-                            <input type="text" id="first-name" name="first-name" required>
-
-                            <label for="email">EMAIL</label>
-                            <input type="email" id="email" name="email" required>
+                
+                <!-- Needed to readjust the whole second section in order to include the button attribute into our form element -->
+                
+                <form action="" method="get" class="form-main-div">
+                    <div class="second">
                             
-                            <label for="password">PASSWORD</label>
-                            <input type="password" id="password" name="password" required>
+                            <div class="form-divs">
+                                <h2>Let's do this!</h2>
+
+                                <label for="first-name">FIRST NAME</label>
+                                <input type="text" id="first-name" name="first-name" >
+
+                                <label for="email">EMAIL</label>
+                                <input type="email" id="email" name="email" >
+                            
+                                <label for="password">PASSWORD</label>
+                                <input type="password" id="password" name="password" required>
+                                <p id="error"></p>
                     
-                        </div>
+                            </div>
 
-                        <div class="form-divs">
-                            <label for="last-name">LAST NAME</label>
-                            <input type="text" id="last-name" name="last-name" required>
+                            <div class="form-divs form-divs-right">
+                                <label for="last-name">LAST NAME</label>
+                                <input type="text" id="last-name" name="last-name" >
                             
-                            <label for="phone">PHONE NUMBER</label>
-                            <input type="tel" id="phone" name="phone" required>
+                                <label for="phone">PHONE NUMBER</label>
+                                <input type="tel" id="phone" name="phone">
                             
-                            <label for="confirm-password">CONFIRM PASSWORD</label>
-                            <input type="password" id="confirm-password" name="confirm-password" required>
-                        </div>
-                    </form>
+                                <label for="confirm-password">CONFIRM PASSWORD</label>
+                                <input type="password" id="confirm-password" name="confirm-password" required>
+                            </div>
+                    </div>
+                    <div class="third">
+                        <button type="submit">Create Account</button>
+                        <h4>Already have an account? <a href="#">Log in</a></h4>
+                    </div>
+                </form>
 
-                </div>
-                <div class="third">third</div>
+                
+                
             </div>
         </div>
         

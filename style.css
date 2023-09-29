@@ -29,13 +29,14 @@ body {
     display: flex;
     flex-direction: column;
     width: 65vw;
-    background-color: #fafafa;
+    /* background-color: #fafafa; */
 }
 
 .first {
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
+    background-color: #fafafa;
     /* margin-left: 5%;
     margin-bottom: 5%; */
 }
@@ -54,12 +55,20 @@ body {
 
 .third {
     height: 30vh;
+    background-color: #fafafa;
+    padding-left: 5%;
+    padding-top: 5%;
 }
 
 .second {
+    display: flex;
     background-color: white;
     margin-left: 5%;
-    margin-bottom: 2%;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
 }
 
 .form-main-div {
@@ -69,6 +78,10 @@ body {
 .form-divs {
     display: flex;
     flex-direction: column;
+}
+
+.form-divs-right {
+    margin-top: 68px;
 }
 
 .form-divs:nth-child(2) {
@@ -83,8 +96,13 @@ input {
     border-radius: 3px;
 }
 
+label {
+    font-size: 10px;
+    color: #3b3b3c;
+}
+
 input:focus {
-    border: 1px solid blue; /* I believe due to my web browser settings, it does not allow me to change the border color for focus */
+    border: 1px solid blue; 
     box-shadow: 5px 5px 10px 2px rgba(0, 0, 0, 0.8);
 }
 
@@ -92,7 +110,29 @@ input:invalid {
     border-color: red;
 }
 
+input[type='password'] {
+    margin-bottom: 0;
+}
 
+#error {
+    color: red;
+    font-size: small;
+    margin: 0;
+}
+
+button {
+    background: #596D48;
+    color: #fafafa;
+    padding: 15px 55px;
+    border-radius: 5px;
+    border: none;
+    font-size: 15px;
+}
+
+a {
+    text-decoration: none;
+    color: #596D48;
+}
 
 
 
